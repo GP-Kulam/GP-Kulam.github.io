@@ -1,0 +1,271 @@
+/* primary= #eeeeee */
+/* secondary= #32e0c4 */
+.bg-primary {
+    background: #eeeeee
+}
+.bg-secondary{
+    background: #32e0c4;
+}
+.bg-tertiary{
+    background: #45484d;
+}
+.bg-low{
+    background: #222831;
+}
+.primary {
+    color: #eeeeee
+}
+.secondary{
+    color: #32e0c4;
+}
+.tertiary{
+    color: #3f4144;
+}
+.low{
+    color: #222831;
+}
+.comfortaa-font{
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+.kaushanScript-font{
+    font-family: 'Kaushan Script', cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    transition: all 0.5s ease-in-out;
+}
+header {
+    height: 100vh;
+    clip-path: circle(930px at 600px 0);
+    background: rgb(176,255,242);
+    background: linear-gradient(160deg, rgba(176, 255, 242, 0.794) 0%, rgba(0, 255, 213, 0.678) 50%, rgba(0,249,209,1) 100%);  
+}
+nav {
+    background: #eeeeee;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    z-index: 12000;
+    left: 0;
+}
+nav a{
+    margin: 15px;
+}
+nav a:hover{
+    color: #222831;
+}
+.items-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name{
+    font-size: 3rem;
+    padding: 1rem;
+}
+footer{
+    width: 100%;
+    padding: 50px;
+}
+footer a{
+    font-size: 2.5rem;
+    margin: 30px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 200px;
+}
+.col-6{
+    width: 50%;
+    padding: 50px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-3{
+    width: 25%;
+    padding: 50px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.experience, 
+.objective,
+.connect {
+    padding: 60px 120px;
+}
+.objective p,
+.connect p {
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+.experience h1, 
+.objective h1,
+.skills h1,
+.connect h1{
+    text-align: center;
+}
+.details {
+    width: 400px;
+    height: 420px;
+    border-radius: 25px;
+    background: #eeeeee;
+    box-shadow:  24px 24px 48px #cacaca,
+             -24px -24px 48px #ffffff;
+    padding: 25px;
+    cursor: pointer;
+}
+.company,
+.duration,
+.title,
+.desc{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 0.4s ease-in-out;
+}
+.skills,
+.connect{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #f4f4f4;
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #eeeeee;
+}
+.skill .rate{
+    clip-path: circle(0px at 0 0);
+    transition: all 1s ease-in-out;
+}
+.skill:hover{
+    background: #222831;
+}
+.skill:hover .rate{
+    clip-path: circle(200px at 0 0);
+}
+.connect {
+    text-align: center;
+    padding-bottom: 100px;
+}
+.connect p{
+    margin-bottom: 50px;
+}
+.connect a{
+    text-decoration: none;
+    padding: 20px 35px;
+    border: 1px solid #00d4b1;
+    margin-top: 20px;
+    color: #00d4b1;
+}
+.connect a:hover{
+    background: #32e0c4;
+    border: 1px solid #32e0c4;
+    color: #222831;
+}
+@media screen and (max-width: 1680px){
+    .row{
+        padding: 0px 100px;
+        flex-direction: column;
+    }
+    .col-6{
+        width: 100%;
+        padding: 50px 10px;
+    }
+    .col-3{
+        width: 100%;
+    }
+    .experience, 
+    .objective {
+        padding: 20px 60px;
+    }
+    .objective p{
+        width: 70%;
+    }
+    .details {
+        width: 360px;
+        height: 420px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 420px) {
+    header {
+        height: 100vh;
+        clip-path: circle(650px at 0px 0);  
+    }
+    nav {
+        background: #eeeeee;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: absolute;
+        z-index: 12000;
+        top: 0;
+        border-radius: 0px 0px 12px 12px;
+        left: auto;
+        right: auto;
+    }
+    nav a{
+        margin: 10px;
+    }
+    footer{
+        width: 100%;
+        padding: 30px;
+    }
+    footer a{
+        font-size: 1.2rem;
+        margin: 12px;
+    }
+    .experience, 
+    .objective,
+    .connect {
+        padding: 40px 0;
+    }
+    .connect{
+        padding-bottom: 120px;
+    }
+    .objective p,
+    .connect p{
+        width: 90%;
+    }
+    .row{
+        padding: 0;
+        flex-direction: column;
+    }
+    .col-6{
+        padding: 50px 8px;
+    }
+    .details {
+        width: 325px;
+        border-radius: 19px;
+        background: #eeeeee;
+        box-shadow:  13px 13px 26px #cacaca,
+                    -13px -13px 26px #ffffff;
+    }
+    .skill{
+        padding: 10px;
+        height: 250px;
+        width: 250px;
+    }
+}
