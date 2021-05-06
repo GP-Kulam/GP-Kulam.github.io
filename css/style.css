@@ -114,7 +114,8 @@ footer a{
 .experience h1, 
 .objective h1,
 .skills h1,
-.connect h1{
+.connect h1,
+.achievement h1 {
     text-align: center;
 }
 .details {
@@ -181,6 +182,17 @@ footer a{
     background: #32e0c4;
     border: 1px solid #32e0c4;
     color: #222831;
+}
+.achievement{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.achievement .img img{
+    width: 300px;
+}
+
+.achievement .img1 img{
+    width: 250px;
 }
 @media screen and (max-width: 1680px){
     .row{
