@@ -78,7 +78,8 @@ footer a{
     font-size: 2.5rem;
     margin: 30px;
 }
-.bottomFooter p{
+.bottomFooter p,
+.bottomFooter h4{
     color: #eeeeee;
 }
 .row{
@@ -196,6 +197,10 @@ footer a{
 
 .achievement .img1 img{
     width: 250px;
+}
+.couter {
+    position: absolute;
+    margin-top: 80px;
 }
 @media screen and (max-width: 1680px){
     .row{
