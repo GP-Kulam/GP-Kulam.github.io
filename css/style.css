@@ -78,6 +78,9 @@ footer a{
     font-size: 2.5rem;
     margin: 30px;
 }
+.bottomFooter p{
+    color: #eeeeee;
+}
 .row{
     display: flex;
     flex-direction: row;
