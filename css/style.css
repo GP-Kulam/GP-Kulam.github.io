@@ -131,6 +131,8 @@ footer a{
              -24px -24px 48px #ffffff;
     padding: 25px;
     cursor: pointer;
+    text-decoration: none;
+    color: #45484d;
 }
 .company,
 .duration,
